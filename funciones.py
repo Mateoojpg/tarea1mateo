@@ -12,3 +12,13 @@ def lista_primos_menores(numero):
         if es_primo(i):
             primos_menores.append(i)
     return primos_menores
+
+numero = int(input("Ingrese un número: "))
+if es_primo(numero):
+    print(f"{numero} es un número primo.")
+else:
+    print(f"{numero} no es un número primo.")
+
+primos_menores = lista_primos_menores(numero)
+print("Números primos menores:")
+print(primos_menores)
